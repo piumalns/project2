@@ -25,6 +25,8 @@ router.post("/register",(req,res)=>{
     User.saveUser(newUser,(err,user)=>{
         if(err){
             res.json({state:false,msg:"data not iserted"});
+            console.log("database connected");
+            console.log("database connected");
         }
         if(user){
             res.json({state:true,msg:"data iserted"});
